@@ -13,7 +13,7 @@ console.log(++count) // --> 22
 
 //----------------------------------------------------
 
-let count = 10;
+// let count = 10;
 let result = count++; // 1. result에 현재 count값(10)을 먼저 넣습니다.
                       // 2. 그 다음 count가 11이 됩니다.
 
