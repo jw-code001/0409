@@ -43,3 +43,70 @@ nvm --> 직접 os별로 설치한다.
 nvm install 20 ---> 20버전인 node를 설치
 
 git에서 뭐 받으려면 setup.zip파일이 최고
+
+
+------------------------------------------------------------
+제미나이에게
+
+회사소개 - 브랜드소개, 오시는 길
+견적문의
+제품안내 - 신상품, 제휴상품, 후기상품
+
+const menu라는 객체로 만들어줘. 링크값은 임의로 넣어줘
+------------------------------------------------------------
+
+const menu = {
+    회사소개: {                                             // 그룹체
+        link: "/about",
+        subMenu: [
+            { name: "브랜드소개", link: "/about/brand" },   // 하위
+            { name: "오시는 길", link: "/about/location" }  // 하위
+        ]
+    },
+    견적문의: {
+        link: "/inquiry",
+        subMenu: [] // 하위 메뉴가 없는 경우 빈 배열
+    },
+    제품안내: {
+        link: "/products",
+        subMenu: [
+            { name: "신상품", link: "/products/new" },
+            { name: "제휴상품", link: "/products/partner" },
+            { name: "후기상품", link: "/products/review" }
+        ]
+    }
+};
+
+// 데이터 확인용 출력
+console.log("--- 전체 메뉴 구조 ---");
+console.log(menu);
+
+console.log("\n--- 특정 데이터 접근 예시 ---");
+console.log("1. 회사소개 링크:", menu.회사소개.link); 
+console.log("2. 브랜드소개 텍스트:", menu.회사소개.subMenu[0].name);
+console.log("3. 신상품 링크:", menu.제품안내.subMenu[0].link);
+
+------------------------------------------------------------
+
+
+const menu = {
+    회사소개: {                                             // 그룹체
+        link: "/about",
+        subMenu: [
+            { name: "브랜드소개", link: "/about/brand" },   // 하위
+            { name: "오시는 길", link: "/about/location" }  // 하위
+        ]
+    },
+    견적문의: {
+        link: "/inquiry",
+        subMenu: [] // 하위 메뉴가 없는 경우 빈 배열
+    },
+    제품안내: {
+        link: "/products",
+        subMenu: [
+            { name: "신상품", link: "/products/new" },
+            { name: "제휴상품", link: "/products/partner" },
+            { name: "후기상품", link: "/products/review" }
+        ]
+    }
+};
